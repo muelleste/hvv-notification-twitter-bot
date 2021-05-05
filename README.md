@@ -50,3 +50,17 @@ access_token_secret="<TwitterAPI Access Token Secret>"
 - Start Container with Docker-Compose
 > root # docker-compose up -d 
 
+## Configuration 
+
+In *'Main'* there are a few configuration paramters definied. 
+```python
+	generalSearchTwitterAPI("vhhbus","vhhbus.csv","bus")
+        generalSearchTwitterAPI("HVVStoerungen","hvvStoerungen.csv","sbahn")
+
+```
+There are three paramters for this function. 
+| parameter-number | parameter-name | explanation | 
+| ---------------- | -------------- | ----------- | 
+| 1 | twitteraccount | is used for which twitter account will be used for searching in tweets. | 
+| 2 | csvname | is a local cache file, to prevent one tweet multiple times | 
+| 3 | vehicleType | declares which case should be used | 

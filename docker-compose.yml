@@ -1,0 +1,7 @@
+version: "3"
+services:
+  liwebhook:
+    build:
+      context: .
+    image: hvv:latest
+    restart: always
